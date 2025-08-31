@@ -1,4 +1,5 @@
-load("@bazel_gazelle//:def.bzl", "gazelle", "gazelle_binary")
+# TODO: figure out why bazel sometimes cvan't see gazelle repo.
+load("@gazelle//:def.bzl", "gazelle", "gazelle_binary")
 load("@package_metadata//licenses/rules:license.bzl", "license")
 load("@package_metadata//purl:purl.bzl", "purl")
 load("@package_metadata//rules:package_metadata.bzl", "package_metadata")

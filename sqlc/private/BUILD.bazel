@@ -1,0 +1,32 @@
+load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
+
+bzl_library(
+    name = "toolchains_repo",
+    srcs = ["toolchains_repo.bzl"],
+    visibility = ["//sqlc:__subpackages__"],
+)
+
+bzl_library(
+    name = "versions",
+    srcs = ["versions.bzl"],
+    visibility = ["//sqlc:__subpackages__"],
+)
+
+bzl_library(
+    name = "resolved_toolchain",
+    srcs = ["resolved_toolchain.bzl"],
+    visibility = ["//sqlc:__subpackages__"],
+)
+
+bzl_library(
+    name = "sqlc_config",
+    srcs = ["sqlc_config.bzl"],
+    visibility = ["//sqlc:__subpackages__"],
+)
+
+bzl_library(
+    name = "sqlc_generate",
+    srcs = ["sqlc_generate.bzl"],
+    visibility = ["//sqlc:__subpackages__"],
+    deps = [":sqlc_config"],
+)
