@@ -1,18 +1,51 @@
 # Bazel rules for sqlc
 
+This is a ruleset to use [sqlc](https://github.com/sqlc-dev/sqlc) with bazel.
+
 ## Installation
 
-From the release you wish to use:
-<https://github.com/regb/rules_mylang/releases>
-copy the WORKSPACE snippet into your `WORKSPACE` file.
+Clone this repo then add to your `MODULE.bazel`:
 
-To use a commit rather than a release, you can point at any SHA of the repo.
+```starlark
+bazel_dep(name = "regb_rules_sqlc", version = "0.0.0", dev_dependency = True)
+local_path_override(
+    module_name = "regb_rules_sqlc",
+    path = PATH_TO_CLONE
+)
 
-For example to use commit `abc123`:
+sqlc = use_extension("@regb_rules_sqlc//sqlc:extensions.bzl", "sqlc")
+sqlc.toolchain(sqlc_version = "1.30.0")
+```
 
-1. Replace `url = "https://github.com/regb/rules_mylang/releases/download/v0.1.0/rules_mylang-v0.1.0.tar.gz"` with a GitHub-provided source archive like `url = "https://github.com/regb/rules_mylang/archive/abc123.tar.gz"`
-1. Replace `strip_prefix = "rules_mylang-0.1.0"` with `strip_prefix = "rules_mylang-abc123"`
-1. Update the `sha256`. The easiest way to do this is to comment out the line, then Bazel will
-   print a message with the correct value. Note that GitHub source archives don't have a strong
-   guarantee on the sha256 stability, see
-   <https://github.blog/2023-02-21-update-on-the-future-stability-of-source-code-archives-and-hashes/>
+## Quick Start
+
+With `go` and `postgres`:
+
+```starlark
+load("@regb_rules_sqlc//sqlc:defs.bzl", "sqlc_config", "sqlc_generate")
+load("@rules_go//go:def.bzl", "go_library")
+
+sqlc_config(
+    name = "config",
+    engine = "postgresql",
+    package = "db",
+    queries = [":query.sql"],
+    schema = [":schema.sql"],
+)
+
+sqlc_generate(
+    name = "generate",
+    config = ":config",
+)
+
+go_library(
+    name = "db",
+    srcs = [":generate"],
+    importpath = "MODULE_BASE/db",
+    deps = [
+        "@com_github_jackc_pgx_v5//:pgx",
+        "@com_github_jackc_pgx_v5//pgtype",
+        "@com_github_jackc_pgx_v5//pgconn",
+    ],
+)
+```
