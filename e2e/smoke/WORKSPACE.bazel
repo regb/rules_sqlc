@@ -1,6 +1,6 @@
 # Override http_archive for local testing
 local_repository(
-    name = "regb_rules_sqlc",
+    name = "rules_sqlc",
     path = "../..",
 )
 
@@ -14,6 +14,6 @@ local_repository(
 # you should fetch it *before* calling this.
 # Alternatively, you can skip calling this function, so long as you've
 # already fetched all the dependencies.
-load("@regb_rules_sqlc//sqlc:repositories.bzl", "rules_sqlc_dependencies")
+load("@rules_sqlc//sqlc:repositories.bzl", "rules_sqlc_dependencies")
 
 rules_sqlc_dependencies()

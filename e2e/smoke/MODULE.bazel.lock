@@ -158,58 +158,6 @@
   },
   "selectedYankedVersions": {},
   "moduleExtensions": {
-    "@@regb_rules_sqlc+//sqlc:extensions.bzl%sqlc": {
-      "general": {
-        "bzlTransitiveDigest": "3hQi9+fSZFkBbctC7/kT61ziPyfnU3lR/aP9gSxPNX0=",
-        "usagesDigest": "tLIwouYrEO9GkxydWPK+cc2mMMZqVwJJaySBXEHbIUw=",
-        "recordedFileInputs": {},
-        "recordedDirentsInputs": {},
-        "envVariables": {},
-        "generatedRepoSpecs": {
-          "sqlc_linux_amd64": {
-            "repoRuleId": "@@regb_rules_sqlc+//sqlc:repositories.bzl%sqlc_repositories",
-            "attributes": {
-              "platform": "linux_amd64",
-              "sqlc_version": "1.29.0"
-            }
-          },
-          "sqlc_linux_arm64": {
-            "repoRuleId": "@@regb_rules_sqlc+//sqlc:repositories.bzl%sqlc_repositories",
-            "attributes": {
-              "platform": "linux_arm64",
-              "sqlc_version": "1.29.0"
-            }
-          },
-          "sqlc_darwin_amd64": {
-            "repoRuleId": "@@regb_rules_sqlc+//sqlc:repositories.bzl%sqlc_repositories",
-            "attributes": {
-              "platform": "darwin_amd64",
-              "sqlc_version": "1.29.0"
-            }
-          },
-          "sqlc_darwin_arm64": {
-            "repoRuleId": "@@regb_rules_sqlc+//sqlc:repositories.bzl%sqlc_repositories",
-            "attributes": {
-              "platform": "darwin_arm64",
-              "sqlc_version": "1.29.0"
-            }
-          },
-          "sqlc_toolchains": {
-            "repoRuleId": "@@regb_rules_sqlc+//sqlc/private:toolchains_repo.bzl%toolchains_repo",
-            "attributes": {
-              "user_repository_name": "sqlc"
-            }
-          }
-        },
-        "recordedRepoMappingEntries": [
-          [
-            "regb_rules_sqlc+",
-            "bazel_tools",
-            "bazel_tools"
-          ]
-        ]
-      }
-    },
     "@@rules_kotlin+//src/main/starlark/core/repositories:bzlmod_setup.bzl%rules_kotlin_extensions": {
       "general": {
         "bzlTransitiveDigest": "OlvsB0HsvxbR8ZN+J9Vf00X/+WVz/Y/5Xrq2LgcVfdo=",
@@ -268,6 +216,58 @@
         "recordedRepoMappingEntries": [
           [
             "rules_kotlin+",
+            "bazel_tools",
+            "bazel_tools"
+          ]
+        ]
+      }
+    },
+    "@@rules_sqlc+//sqlc:extensions.bzl%sqlc": {
+      "general": {
+        "bzlTransitiveDigest": "umRrFSwLOcumtzTvLj5XW/20xiDx5exa4zhC1z2Lv08=",
+        "usagesDigest": "i16AvABU+23riYOLyEQ/ymuaSos0D6pniOP6wdufndU=",
+        "recordedFileInputs": {},
+        "recordedDirentsInputs": {},
+        "envVariables": {},
+        "generatedRepoSpecs": {
+          "sqlc_linux_amd64": {
+            "repoRuleId": "@@rules_sqlc+//sqlc:repositories.bzl%sqlc_repositories",
+            "attributes": {
+              "platform": "linux_amd64",
+              "sqlc_version": "1.29.0"
+            }
+          },
+          "sqlc_linux_arm64": {
+            "repoRuleId": "@@rules_sqlc+//sqlc:repositories.bzl%sqlc_repositories",
+            "attributes": {
+              "platform": "linux_arm64",
+              "sqlc_version": "1.29.0"
+            }
+          },
+          "sqlc_darwin_amd64": {
+            "repoRuleId": "@@rules_sqlc+//sqlc:repositories.bzl%sqlc_repositories",
+            "attributes": {
+              "platform": "darwin_amd64",
+              "sqlc_version": "1.29.0"
+            }
+          },
+          "sqlc_darwin_arm64": {
+            "repoRuleId": "@@rules_sqlc+//sqlc:repositories.bzl%sqlc_repositories",
+            "attributes": {
+              "platform": "darwin_arm64",
+              "sqlc_version": "1.29.0"
+            }
+          },
+          "sqlc_toolchains": {
+            "repoRuleId": "@@rules_sqlc+//sqlc/private:toolchains_repo.bzl%toolchains_repo",
+            "attributes": {
+              "user_repository_name": "sqlc"
+            }
+          }
+        },
+        "recordedRepoMappingEntries": [
+          [
+            "rules_sqlc+",
             "bazel_tools",
             "bazel_tools"
           ]

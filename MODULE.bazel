@@ -1,7 +1,7 @@
 "Bazel dependencies"
 
 module(
-    name = "regb_rules_sqlc",
+    name = "rules_sqlc",
 
     # NOTE:
     # version = "",

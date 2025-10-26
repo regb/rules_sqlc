@@ -178,8 +178,8 @@
   "moduleExtensions": {
     "//sqlc:extensions.bzl%sqlc": {
       "general": {
-        "bzlTransitiveDigest": "3hQi9+fSZFkBbctC7/kT61ziPyfnU3lR/aP9gSxPNX0=",
-        "usagesDigest": "3dUXYFDuZP7gCtKzecTbcOG9xoXSyCt1eP3W2LJCLTs=",
+        "bzlTransitiveDigest": "umRrFSwLOcumtzTvLj5XW/20xiDx5exa4zhC1z2Lv08=",
+        "usagesDigest": "aLIC6nH56drUT1yXgmbPfnVwFZ2KKy1oVjL3JuNFiIs=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},

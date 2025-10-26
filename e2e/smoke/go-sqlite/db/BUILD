@@ -1,5 +1,5 @@
-load("@regb_rules_sqlc//sqlc:defs.bzl", "sqlc_config", "sqlc_generate")
 load("@rules_go//go:def.bzl", "go_library")
+load("@rules_sqlc//sqlc:defs.bzl", "sqlc_config", "sqlc_generate")
 
 sqlc_config(
     name = "test-config",

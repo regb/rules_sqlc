@@ -2,9 +2,9 @@ bazel_dep(name = "bazel_skylib", version = "1.8.2", dev_dependency = True)
 
 bazel_dep(name = "rules_go", version = "0.58.2")
 
-bazel_dep(name = "regb_rules_sqlc", version = "0.0.0", dev_dependency = True)
+bazel_dep(name = "rules_sqlc", version = "0.0.0", dev_dependency = True)
 local_path_override(
-    module_name = "regb_rules_sqlc",
+    module_name = "rules_sqlc",
     path = "../..",
 )
 
