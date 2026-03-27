@@ -24,6 +24,7 @@ SqlcConfigInfo = provider(
         "queries": "List of query files",
         "schema": "List of schema files",
         "package": "The Go package for the generated code",
+        "emit_interface": "If true, output a `Querier` interface in the generated package"
     },
 )
 
@@ -51,6 +52,7 @@ def _sqlc_config_impl(ctx):
                         # in mysql so could lead to confusing behavior that varies across
                         # database engines.
                         "emit_pointers_for_null_types": True,
+                        "emit_interface": ctx.attr.emit_interface,
                     },
                 },
             }],
@@ -64,6 +66,7 @@ def _sqlc_config_impl(ctx):
             queries = ctx.files.queries,
             schema = ctx.files.schema,
             package = ctx.attr.package,
+            emit_interface = ctx.attr.emit_interface,
         ),
     ]
 
@@ -88,6 +91,11 @@ sqlc_config = rule(
         "package": attr.string(
             doc = "The Go package for the generated code",
             mandatory = True,
+        ),
+        "emit_interface": attr.bool(
+            doc = "If True, output a `Querier` interface in the generated package",
+            default = False,
+            mandatory = False,
         ),
     },
 )
