@@ -22,6 +22,9 @@ def _sqlc_generate_impl(ctx):
     for query_file in query_files:
         output_files.append(ctx.actions.declare_file(query_file.basename + ".go"))
 
+    if config_info.emit_interface:
+        output_files.append(ctx.actions.declare_file("querier.go"))
+
     ctx.actions.run_shell(
         inputs = all_inputs,
         outputs = output_files,
