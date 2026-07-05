@@ -1,0 +1,2 @@
+# Keep WORKSPACE-mode CI working on Bazel 8, where WORKSPACE is disabled by default.
+common --enable_workspace

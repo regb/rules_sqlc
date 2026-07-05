@@ -1,4 +1,4 @@
-load("@rules_go//go:def.bzl", "go_library")
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
 load("@rules_sqlc//sqlc:defs.bzl", "sqlc_config", "sqlc_generate")
 
 sqlc_config(

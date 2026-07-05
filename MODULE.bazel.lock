@@ -38,8 +38,8 @@
     "https://bcr.bazel.build/modules/bazel_skylib/1.7.0/MODULE.bazel": "0db596f4563de7938de764cc8deeabec291f55e8ec15299718b93c4423e9796d",
     "https://bcr.bazel.build/modules/bazel_skylib/1.7.1/MODULE.bazel": "3120d80c5861aa616222ec015332e5f8d3171e062e3e804a2a0253e1be26e59b",
     "https://bcr.bazel.build/modules/bazel_skylib/1.8.1/MODULE.bazel": "88ade7293becda963e0e3ea33e7d54d3425127e0a326e0d17da085a5f1f03ff6",
-    "https://bcr.bazel.build/modules/bazel_skylib/1.8.2/MODULE.bazel": "69ad6927098316848b34a9142bcc975e018ba27f08c4ff403f50c1b6e646ca67",
-    "https://bcr.bazel.build/modules/bazel_skylib/1.8.2/source.json": "34a3c8bcf233b835eb74be9d628899bb32999d3e0eadef1947a0a562a2b16ffb",
+    "https://bcr.bazel.build/modules/bazel_skylib/1.9.0/MODULE.bazel": "72997b29dfd95c3fa0d0c48322d05590418edef451f8db8db5509c57875fb4b7",
+    "https://bcr.bazel.build/modules/bazel_skylib/1.9.0/source.json": "7ad77c1e8c1b84222d9b3f3cae016a76639435744c19330b0b37c0a3c9da7dc0",
     "https://bcr.bazel.build/modules/bazel_skylib_gazelle_plugin/1.4.1/MODULE.bazel": "50447bdca4e2fb6d46bbbe724d831447b1c4e0ce845a0fd61f8c8d7103d8eea1",
     "https://bcr.bazel.build/modules/bazel_skylib_gazelle_plugin/1.4.1/source.json": "c1669ef02780d38e17e39a15d0dd8bbdd1620755f4936c5693cecccb9aa9d2b6",
     "https://bcr.bazel.build/modules/buildifier_prebuilt/8.2.0.2/MODULE.bazel": "a9b689711d5b69f9db741649b218c119b9fdf82924ba390415037e09798edd03",
@@ -180,7 +180,7 @@
   "moduleExtensions": {
     "//sqlc:extensions.bzl%sqlc": {
       "general": {
-        "bzlTransitiveDigest": "Tyc3yZKJMPIrJZTRNEIgmslUtXcK4JXIcIOFOa//LgI=",
+        "bzlTransitiveDigest": "Zybth7ob85uGx98h/AueG6jOz9jviP4edS/W7rlbPEk=",
         "usagesDigest": "Xr+Goef4Q89YCxzLTVGDqwwan8jQBA+RsBd0rgA4oKU=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},

@@ -24,7 +24,7 @@ SqlcConfigInfo = provider(
         "queries": "List of query files",
         "schema": "List of schema files",
         "package": "The Go package for the generated code",
-        "emit_interface": "If true, output a `Querier` interface in the generated package"
+        "emit_interface": "If true, output a `Querier` interface in the generated package",
     },
 )
 

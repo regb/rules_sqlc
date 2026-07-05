@@ -1,13 +1,13 @@
-load("@rules_go//go:def.bzl", "go_library")
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
 load("@rules_sqlc//sqlc:defs.bzl", "sqlc_config", "sqlc_generate")
 
 sqlc_config(
     name = "test-config",
+    emit_interface = True,
     engine = "sqlite",
     package = "db",
     queries = [":query.sql"],
     schema = [":schema.sql"],
-    emit_interface = True,
 )
 
 sqlc_generate(
@@ -18,8 +18,8 @@ sqlc_generate(
 go_library(
     name = "db",
     srcs = [
+        "empty.go",
         ":test",
-        "empty.go"
     ],
     importpath = "github.com/regb/rules_sqlc/e2e/smoke/go-sqlite/db",
     visibility = ["//visibility:public"],
