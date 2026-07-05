@@ -18,7 +18,7 @@ archive_override(
 
 
 sqlc = use_extension("@rules_sqlc//sqlc:extensions.bzl", "sqlc")
-sqlc.toolchain(sqlc_version = "1.30.0")
+sqlc.toolchain(sqlc_version = "1.31.1")
 ```
 
 ## Quick Start

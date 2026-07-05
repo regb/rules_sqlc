@@ -41,7 +41,7 @@ bazel_dep(name = "bazel_lib", version = "3.0.0", dev_dependency = True)
 bazel_dep(name = "buildifier_prebuilt", version = "8.2.0.2", dev_dependency = True)
 
 sqlc = use_extension("//sqlc:extensions.bzl", "sqlc")
-sqlc.toolchain(sqlc_version = "1.29.0")
+sqlc.toolchain(sqlc_version = "1.31.1")
 use_repo(sqlc, "sqlc_toolchains")
 
 register_toolchains("@sqlc_toolchains//:all")

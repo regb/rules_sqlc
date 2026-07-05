@@ -180,8 +180,8 @@
   "moduleExtensions": {
     "//sqlc:extensions.bzl%sqlc": {
       "general": {
-        "bzlTransitiveDigest": "umRrFSwLOcumtzTvLj5XW/20xiDx5exa4zhC1z2Lv08=",
-        "usagesDigest": "aLIC6nH56drUT1yXgmbPfnVwFZ2KKy1oVjL3JuNFiIs=",
+        "bzlTransitiveDigest": "Tyc3yZKJMPIrJZTRNEIgmslUtXcK4JXIcIOFOa//LgI=",
+        "usagesDigest": "Xr+Goef4Q89YCxzLTVGDqwwan8jQBA+RsBd0rgA4oKU=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -190,28 +190,28 @@
             "repoRuleId": "@@//sqlc:repositories.bzl%sqlc_repositories",
             "attributes": {
               "platform": "linux_amd64",
-              "sqlc_version": "1.29.0"
+              "sqlc_version": "1.31.1"
             }
           },
           "sqlc_linux_arm64": {
             "repoRuleId": "@@//sqlc:repositories.bzl%sqlc_repositories",
             "attributes": {
               "platform": "linux_arm64",
-              "sqlc_version": "1.29.0"
+              "sqlc_version": "1.31.1"
             }
           },
           "sqlc_darwin_amd64": {
             "repoRuleId": "@@//sqlc:repositories.bzl%sqlc_repositories",
             "attributes": {
               "platform": "darwin_amd64",
-              "sqlc_version": "1.29.0"
+              "sqlc_version": "1.31.1"
             }
           },
           "sqlc_darwin_arm64": {
             "repoRuleId": "@@//sqlc:repositories.bzl%sqlc_repositories",
             "attributes": {
               "platform": "darwin_arm64",
-              "sqlc_version": "1.29.0"
+              "sqlc_version": "1.31.1"
             }
           },
           "sqlc_toolchains": {

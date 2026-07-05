@@ -21,4 +21,16 @@ TOOL_VERSIONS = {
         "darwin_amd64": "sha384-FyKzcez4Qcfk2922XTi4Hww+Xdc5l9up2ksiHAtsL+u17lc01WTwOnetJ/tPtoAP",
         "darwin_arm64": "sha384-PJhEBt+NmbziSSKZ+7fwfdyHdR6UDh3nry4cmvlKmYvQqQ/a/gGdebl1ScOnuF+q",
     },
+    "1.31.0": {
+        "linux_amd64": "sha384-F/ZE+0ZrPqawV5BBHwMrMpQwiXmEgvLeSnZTEhpRFnLBa7ibsQmCbEiBm6xJCtrd",
+        "linux_arm64": "sha384-yYUY4blXSm35DS9alv/KU2/Wdz//oqm53U1odU7fbFggBDAkh0J2gnVdzMaIIr3v",
+        "darwin_amd64": "sha384-q1BKrsOjumGWeZIvbdbUMIZ/L8Hl8oN4sd5fiL+mVXy+bvRSfWDLw7EDdYkihRjx",
+        "darwin_arm64": "sha384-8AOd22qiopNvDlD9CHTkKarDnV7RO77kAa8lGMFdW7JLFuXJN6pQoU7jYRNZJL+o",
+    },
+    "1.31.1": {
+        "linux_amd64": "sha384-HUb41zWmX+fUPX3BmgET3aTBfYdbhNYvFgWp1ZfVSonMYwO5i3mE8MomBkDGDX2W",
+        "linux_arm64": "sha384-k1mgAlOzYrwXUJvph0mRTi/gJIjEC3q2HTL/in10+rojQ3xLTaT3Z4tOwmMmTzRn",
+        "darwin_amd64": "sha384-G6yw0RC2A7KEexbeWnPPazndPlm4F7Nqq6GGc2VjYSGYypDfhRiUOTxOEJNrPlJU",
+        "darwin_arm64": "sha384-d0UQG+OjKsbFLLKVMuc9U5EfJzdHgY+TvnHXgcNrtfAYgGyIm5AwmSRyGIIUgWsf",
+    },
 }
